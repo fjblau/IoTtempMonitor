@@ -9,8 +9,8 @@ os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
 
 base_dir = '/sys/bus/w1/devices/'
-device_folder1 = glob.glob(base_dir + '28*7c8')[0]
-device_folder2 = glob.glob(base_dir + '28*cce')[0]
+device_folder1 = glob.glob(base_dir + '28*31c')[0]
+device_folder2 = glob.glob(base_dir + '28*ff9')[0]
 device_file1 = device_folder1 + '/w1_slave'
 device_file2 = device_folder2 + '/w1_slave'
 
